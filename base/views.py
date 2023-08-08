@@ -94,7 +94,10 @@ def item_cart(request):
     if request.method == 'POST':
         cart = request.user
     user = request.user
-    cart = Cart.objects.get_or_create(user=user)
+    try:
+        cart = Cart.objects.get(user=user)
+    except Cart.DoesNotExist:
+            cart = Cart.objects.create(user=user)
     cart_products = CartItem.objects.filter(cart=cart)
     price_array = [x.product.price for x in cart_products]
     total = sum(price_array)
