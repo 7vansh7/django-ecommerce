@@ -1,0 +1,41 @@
+# From chatgpt
+# Compiled Python files
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+.env
+
+# Database files (SQLite)
+*.sqlite3
+
+# Media and static files (user-uploaded content and collected static files)
+media/
+staticfiles/
+
+# Secret key (keep this private!)
+secret_key.txt
+
+# Debug logs
+*.log
+
+# Environment-specific settings
+*.env
+
+# Compiled translations
+*.mo
+
+# Local development settings
+settings_local.py
+
+# IDE-specific files (example: PyCharm)
+.idea/
+.vscode/
+*.sublime-*
+
+# macOS specific files
+.DS_Store
+
+# Temporary files
+*.tmp

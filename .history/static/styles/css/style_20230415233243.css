@@ -1,0 +1,18 @@
+.image{
+    height: 40vh;
+    width: 100vw;
+    margin-top: 10px;
+}
+
+.margin{
+
+    margin-top: 10px;
+    margin-left: 90px;
+    padding: 30px;
+}
+
+.wrapper{
+
+    display: grid;
+    grid: auto-flow / 1fr 1fr 1fr;
+}
